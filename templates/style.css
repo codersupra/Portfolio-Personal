@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+header {
+    display: flex;
+    position: relative;
+    left: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+    font-size: 22px;
+    font-family: 'Old Standard TT', serif;
+}
+
+.nav li .active,
+.nav li :hover {
+    text-decoration: underline;
+}
+
+.main_body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    opacity: 0.25;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.container {
+    color: white;
+    font-family: 'Trirong', serif;
+    text-align: center;
+}
+
+.eff {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h1 a {
+    font-family: 'Trirong', serif;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.body .Description {
+    font-family: 'Trirong', serif;
+    color: white;
+}
+
+.Description p {
+    color: #8e8e8e;
+}
+
+/* .btn {
+    margin: 5px 8px;
+    border: 1px solid #565656;
+    border-radius: 11px;
+    padding: 6px;
+    background-color: #000000;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.5s ease-in-out;
+} */
+
+.btn a {
+    margin: 5px 8px;
+    border: 1px solid #565656;
+    border-radius: 11px;
+    padding: 6px;
+    background-color: #000000;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.5s ease-in-out;
+}
+
+.btn a:hover {
+    /* margin: 5px 8px; */
+    /* border: 1px solid #565656; */
+    /* border-radius: 11px; */
+    /* padding: 6px; */
+    background-color: #000000;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.5s ease-in-out;
+}
+
+.button :hover {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: white;
+}
+
+.Des1 {
+    font-family: 'Trirong', serif;
+    color: white;
+}
+
+.college, .school {
+    display: flex;
+    border: 1.5px solid #818181;
+    position: relative;
+    left: 8px;
+    width: 62%;
+    border-radius: 20px 7px;
+    margin-top: 5px;
+}
+
+.college img, .school img {
+    box-shadow: 4px 4px 15px -4px #a1a1a1;
+    width: 289px;
+    position: relative;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.edu2 li, .edu li {
+    color: #8e8e8e;
+    list-style: circle;
+    left: 36px;
+    font-size: 13px;
+}
+
+.Des2 {
+    font-family: 'Trirong', serif;
+    color: white;
+    text-align: center;
+}
+
+.Des_container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 0.5em;
+}
+
+.item-1 {
+    border-left: 1.5px solid #818181;
+    border-right: 1.5px solid #818181;
+    height: 300px;
+}
+
+.item-1:hover {
+    height: 300px;
+}
+
+.contents {
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr auto;
+    grid-gap: 10px;
+    background-color: grey;
+    height: 20em;
+}
+
+.social_media {
+    margin: 0px 10px;
+    padding: 0px 50px;
+    position: relative;
+    right: 30px;
+}
+
+.links {
+    position: relative;
+    left: 40px;
+    padding: 0px 20px;
+}
+
+.links li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.about h2, .links h2, .social_media h2 {
+    border-bottom: 1.5px solid silver;
+}
+
+.about_li {
+    display: flex;
+    size: 20px;
+}
+
+.about_li li {
+    padding: 10px 10px;
+    color: white;
+}
+
+.social_media li p {
+    position: relative;
+    bottom: 23px;
+    left: 25px;
+}
+
+span a {
+    text-decoration: none;
+}
+
+iframe {
+    position: relative;
+    bottom: 90px;
+    left: 20px;
+}
+
+.copy {
+    text-align: center;
+    color: white;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+@media (max-width: 1200px) {
+    .Des_container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .body {
+        grid-template-columns: 1fr;
+    }
+
+    .college, .school {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li a {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .Des_container {
+        grid-template-columns: 100%;
+    }
+
+    .college, .school {
+        width: 100%;
+    }
+
+    .contents {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .social_media, .links {
+        padding: 0px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    .nav li a {
+        font-size: 16px;
+        padding: 8px 5px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .college img, .school img {
+        width: 100%;
+        left: 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
